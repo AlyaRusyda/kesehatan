@@ -1,6 +1,7 @@
 import pasien, dokter, janjitemu, laporan
 
 def main():
+    # looping print selama program dijalankan
     while True:
         print('''
 Program Manajemen Rumah Sakit
@@ -16,8 +17,10 @@ Pilih aksi:
 0. Keluar
 ''')
 
+        # mengambil input user
         action = input("Masukkan pilihan aksi: ")
 
+        # mengarahkan ke fungsi berdasarkan input user
         if action == '1':
             pasien.menu_pasien()
         elif action == '2':
