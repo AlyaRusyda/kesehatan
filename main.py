@@ -1,4 +1,4 @@
-import pasien, dokter, janjitemu, laporan
+import pasien, dokter, L200240290, laporan
 
 def main():
     # looping print selama program dijalankan
@@ -26,13 +26,13 @@ Pilih aksi:
         elif action == '2':
             dokter.menu_dokter()
         elif action == '3':
-            janjitemu.buat_janji()
+            L200240290.buat_janji()
         elif action == '4':
             laporan.join()
         elif action == '5':
             laporan.agregat()
         elif action == '6':
-            janjitemu.ubah_status()
+            L200240290.ubah_status()
         elif action == '0':
             print("Terima kasih.")
             break
