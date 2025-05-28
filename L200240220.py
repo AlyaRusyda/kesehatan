@@ -49,28 +49,3 @@ def hapus():
     cursor.execute("DELETE FROM pasien WHERE id_pasien = %s", (id_pasien,)) # query untuk menghapus data sesuai dengan input user
     conn.commit() # mengirim query ke database
     conn.close() # menutup koneksi
-
-def menu_pasien():
-    while True:
-        print('''
-Manajemen Pasien:
-1. Lihat Daftar Pasien
-2. Registrasi Pasien
-3. Ubah Nomor Telepon Pasien
-4. Hapus Data Pasien
-0. Kembali
-''')
-        aksi = input("Pilih: ") # input aksi yang akan dilakukan
-        # mengeksekusi aksi sesuai dengan input user
-        if aksi == '1':
-            lihat()
-        elif aksi == '2':
-            tambah()
-        elif aksi == '3':
-            ubah()
-        elif aksi == '4':
-            hapus()
-        elif aksi == '0':
-            break
-        else:
-            print("Pilihan tidak valid.")
